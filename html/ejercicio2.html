@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mateo David Villalobos Bertel> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario # 2</title>
+
+    <style>
+        .fieldTam{
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+
+    <form action="">
+
+        <fieldset class="fieldTam">
+
+            User id:
+            <input type="text" pattern=".{5,12}" required autofocus size="10"><br><br>
+
+            Password:
+            <input type="password" pattern=".{7,12}" required size="10"> <br><br>
+
+            Name:
+            <input type="text" pattern="[A-Za-z]+" required size="40"><br><br>
+
+            Address:
+            <input type="text" pattern="" size="38"><br><br>
+
+            Country:
+            <select name="Country" required>
+                <option value="select">please select Country</option>
+                <option value="colombia">Colombia</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="España">España</option>
+                <option value="Pakistán">Pakistán</option>
+
+            </select><br><br>
+
+            Zip Code:
+            <input type="text" required size="20"><br><br>
+
+            Email:
+            <input type="email" required size="40"><br><br>
+
+            Sex:
+            <input type="radio" name="Sex" readonly required>Male
+            <input type="radio" name="Sex" required>Female <br><br>
+
+            Lenguage: 
+            <input type="checkbox" name="Lenguage" required>English
+            <input type="checkbox" name="Lenguage" required> Non English  <br><br>
+
+            <table>
+                <td style="vertical-align: top;">About:</td>
+                <td><textarea cols="50" rows="10"></textarea ></td>
+
+
+            </table><br><br>
+             
+            
+
+            <center><input type="submit" value="Submit"></center>
+
+        </fieldset>
+    </form>
+</body>
+</html>

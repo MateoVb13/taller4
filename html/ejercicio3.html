@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mateo David Villalobos Bertel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario # 3</title>
+
+    <style>
+        .fieldTam{
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="">
+        <fieldset class="fieldTam">
+
+        <table>
+            <td><strong>Account Type:</strong></td>
+            <td><input type="radio" name="TipoCuenta">Individual <br> <input type="radio" name="TipoCuenta">Entity</td>
+        </table>
+        <br>
+        <strong>First Name:</strong> 
+        <input type="text" pattern="(Mr|Ms|Mrs) [A-Za-z]+\s$" size="32""><br><br>
+    
+        <strong>Middle Name or Initial:</strong> 
+        <input type="text" pattern="[A-Z]{1}[a-z]{1}" maxlength="2"><br><br>
+    
+        <strong>Last Name:</strong> 
+        <input type="text" pattern="(Mr|Ms|Mrs) +[A-Za-z]+( +[A-Za-z]+){1,2}" size="33"><br><br>
+        
+        <strong>Suffix:</strong><select>
+            <option value="">- -</option> 
+            <option value="">Mr</option>
+            <option value="">Mrs</option>
+            <option value="">Ms</option>
+        </select> <br><br>
+    
+        <strong>Taxpayer Identification Number:</strong>
+        <input type="number" style="width: 35px;"> - <input type="number" style="width: 30px;"> - <input type="number" style="width: 40px;"><br><br>
+    
+        <strong>Data of Birth</strong>
+        <input type="number" style="width: 30px;"> - <input type="number" style="width: 30px;"> - <input type="number" style="width: 50px;"> (MM-DD-YYYY)<br><br>
+    
+        <table>
+            <td style="vertical-align: top;">
+                <strong>Street Address:</strong>
+            </td>
+            <td>
+                <input type="text" style="width: 400px;"><br> 
+                <input type="text" style="width: 400px;"><br>
+                <input type="text" style="width: 400px;">
+            </td>
+        </table><br><br>
+         
+    
+        <strong>City:</strong>
+        <input type="text"><br><br>
+    
+        <strong>State:</strong>
+        <select name="" id="">
+            <option value=" - -"></option>
+            <option value="">Amazonas</option>
+            <option value="">Antioquia</option>
+            <option value="">Arauca</option>
+            <option value="">Atlantico</option>
+            <option value="">Bogota</option>
+            <option value="">Bolívar</option>
+            <option value="">Boyacá</option>
+            <option value="">Caldas</option>
+            <option value="">Caquetá</option>
+            <option value="">Casanare</option>
+            <option value="">Cauca</option>
+            <option value="">Cesar</option>
+            <option value="">Chocó</option>
+            <option value="">Córdoba</option>
+            <option value="">Cundinamarca</option>
+            <option value="">Guainía</option>
+            <option value="">Guaviare</option>
+            <option value="">Huila</option>
+            <option value="">La Guajira</option>
+            <option value="">Magdalena</option>
+            <option value="">Meta</option>
+            <option value="">Nariño</option>
+            <option value="">Norte de Santander</option>
+            <option value="">Putumayo</option>
+            <option value="">Quindío</option>
+            <option value="">Risaralda</option>
+            <option value="">San Andrés y Providencia</option>
+            <option value="">Santander</option>
+            <option value="">Sucre</option>
+            <option value="">Tolima</option>
+            <option value="">Valle del Cauca</option>
+            <option value="">Vaupés</option>
+            <option value="">Vichada</option>
+        </select><br><br>
+
+        <strong>Zip Code:</strong>
+        <input type="text" style="width: 55px;" pattern="[0-9]{6}" minlength="5"> - <input type="number" style="width: 45px;" pattern="(?:[0-9]{0,4})"> (Plus Four - Optional)<br><br>
+        <strong>Home Phone:</strong>
+        (<input type="text" style="width: 30px;" pattern="\+[0-9]{2}">) <input type="text" style="width: 30px;" pattern="[0-9]{3}"> - <input type="text" style="width: 45px;" pattern="[0-9]{7}"><br><br>
+    
+        <strong>Driver's License/State ID Number:</strong>
+        <input type="text" style="width: 200px;" pattern="D\d+"><br><br>
+        
+        <strong>Issuing State:</strong>
+        <select>
+            <option value="">- -</option>
+        </select><br><br>
+    
+        <strong>Expiration Date:</strong>
+        <input type="number" style="width: 30px;" min="1" max="12"> - <input type="number" style="width: 30px;"min="1" max="31"> - <input type="number" style="width: 50px;" min="2000"> (MM-DD-YYYY)<br><br>
+    
+        <input type="submit">
+
+    </fieldset>
+    
+    </form>
+    
+</body>
+</html>
